@@ -1,0 +1,84 @@
+GET http://localhost:4000/userApi/getusers
+
+###
+POST  http://localhost:4000/userApi/login
+Content-Type: application/json
+
+{
+    "username": "ravivarmachunchu456@gmail.com",
+    "email": "ravivarmachunchu456@gmail.com",
+    "dob": "2025-02-06",
+    "createPassword": "111111111",
+    "confirmPassword": "111111111",
+    "branch": "cse",
+    "gender": "male"
+}
+
+
+###
+POST http://localhost:4000/userApi/create-user
+Content-Type: application/json
+//space is required
+
+{
+    "username": "ravivarmachunchu",
+    "email": "ravivarmachunchu456@gmail.com",
+    "dob": "2025-01-30",
+    "password": "Srinivas@123",
+    "confirmPassword": "Srinivas@123",
+    "branch": "cse",
+    "gender": "female"
+}
+
+###
+PUT http://localhost:4000/userApi/update-user
+Content-Type: application/json
+//space is required
+
+{
+      "id":2,
+    "username":"Ravi Varma",
+    "password":"chunchu",
+    "dob":"12-04-2001"  
+}
+
+###
+DELETE http://localhost:4000/userApi/remove-user/RaviVarma
+
+
+
+
+
+//product api's
+###
+GET http://localhost:4000/productApi/getproducts
+
+###
+GET http://localhost:4000/productApi/getproduct/3
+
+###
+POST http://localhost:4000/productApi/create-product
+Content-Type: application/json
+//space is required
+
+{
+    "id":3,
+    "item":"phone",
+    "brand":"lenova",
+    "price":40000
+}
+###
+PUT http://localhost:4000/productApi/update-product
+Content-Type: application/json
+//space is required
+
+{
+    "id":3,
+    "item":"laptop",
+    "brand":"lenova",
+    "price":70000
+}
+
+###
+DELETE http://localhost:4000/productApi/remove-product/3
+
